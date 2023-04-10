@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+/**container**/
+.container{
+    padding: 52px 20px 40px 20px;
+}
+/**container end**/
+/**warpper flex style**/
+.wrapper-flex{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+/**warpper flex style end**/
+/**flex-images style **/
+.flex-images{
+    position: relative;
+}
+
+.flex-images .flex-images-slider{
+    transition: 1s ease-in all;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-31%,-7%);
+    opacity: 0;
+}
+.flex-images .flex-images-slider.active{
+    transition: 1s ease-in all;
+    opacity: 1;
+}
+/**flex-images end**/
+/**authorization-form**/
+.authorization-form{
+    text-align: center;
+    transition: .3s all linear;
+  
+}
+/**authorization-form end**/
+/**authorization-form form**/
+.authorization-form form{
+    border: 1px solid #ccc;
+    padding: 40px 40px 0 40px;
+    width: auto;
+    margin-bottom:20px;
+}
+.authorization-form form div{
+    width: 258px;
+    height: 36px;
+    position: relative;
+    margin-bottom: 5px;
+}
+/**logo**/
+.authorization-form form .logo{
+    margin-bottom: 50px;
+}
+/**logo end**/
+.authorization-form form div label{
+    transition: .3s all;
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    font-size: 11px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0,0,0,.7);
+    font-weight: 500;
+}
+.authorization-form form div input{
+    width: inherit;
+    height: inherit;
+    padding: 10px 10px 0px 10px;
+    outline: none;
+    border: 1px solid #ccc;
+    font-size: 13px;
+    z-index: 9;
+}
+.authorization-form form div input:focus{
+    border: 1px solid #000;
+}
+.form-btn-box{
+    margin-top: 20px; 
+}
+.form-btn-box button{
+    width: inherit;
+    height: 32px;
+    border-radius: 10px;
+    background-color: #6b9fff;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.or-form{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+.or-form p{
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    margin:0 5%;
+}
+.or-form span{
+    width: 45%;
+    height: 1px;
+    background-color: #ccc;
+}
+.facebook-form{
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/**authorization-form form end**/
+/**apps**/
+.apps p{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+.apps img{
+    cursor: pointer;
+}
+/**apps end**/
+/**footer**/
+footer.footer {
+    width: 100%;
+    margin: 0 auto;
+}
+footer.footer .footer-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+footer.footer .footer-flex a{
+    display: inline-block;
+    white-space: nowrap;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    margin-right: 15px;
+    line-height: 30px;
+    color: #000;
+    text-decoration: none;
+    opacity: .7;
+}
+footer.footer .footer-flex a:hover{
+    text-decoration: underline;
+}
+.footer-config{
+    margin-top: 20px;
+    letter-spacing: .5px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    opacity: .7;
+}
+/**footer end**/
+/**btn-look**/
+.btn-look{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    transition: .3s all; 
+    z-index: 10;
+    cursor: pointer;
+    height: 100%;
+    width: auto;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.btn-look:hover{
+    transition: .3s all; 
+    opacity: .5;
+}
+/**btn-look end**/
+/**accep styles**/
+.accept{
+    transition: .3s all linear;
+    max-width: 340px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.accept img:nth-child(1){
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+.accept h1{
+    font-size: 22px;
+    margin-bottom: 40px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.accept p{
+    display: flex;
+    align-items: center;
+}
+.accept p span{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-right: 20px;
+    color: #e7780f;
+    font-weight: 600;
+}
+/**accep styles end**/
+/**media styles**/
+/**875**/
+@media(max-width:875.98px){
+    .flex-images img{
+        display: none;
+    }
+    .apps{
+        margin-bottom: 40px;
+    }
+    .accept{
+        margin-bottom: 70px;
+    }
+}
+/**875 end **/
+/**400**/
+@media(max-width:399.98px){
+    .container{
+        width: 100%;
+        padding: 0;
+        padding-top: 20px;
+    }
+    .authorization-form{
+        width: 100%;
+    }
+    .authorization-form form{
+        width: 100%;
+        border: none;
+        padding: 0;
+    }
+    .authorization-form form div {
+        margin: 0 auto 10px auto;
+    }
+    footer.footer .footer-flex a{
+        font-size: 11px;
+    }
+}
+/**media styles end**/
+
